@@ -1,0 +1,49 @@
+html {
+  background-color: #43e9fc86;
+}
+body {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #e268fd;
+  padding: 0 20px 20px 20px;
+  border: 5px solid rgb(252, 159, 159)
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  
+}
+h1 ,h2{
+  margin: 0;
+  font-family:'Comic Sans MS';
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 3px rgb(249, 117, 117);
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+p, li {
+  font-size: 16px;
+  /* line-height 后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+  line-height: 2;
+  letter-spacing: 1px;
+}
+strong {
+  color:red;
+}
+article{
+  font-family:'Comic Sans MS';
+  color: #00539F;
+  text-shadow: 3px 3px 3px rgb(249, 117, 117);
+}
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
