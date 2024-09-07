@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人简历</title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu {
+        background: #910000;
+    }
+    
+    .menu>ul {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .menu ul li {
+        list-style: none;
+    }
+    
+    .menu>ul>li {
+        position: relative;
+    }
+    
+    .menu ul li a {
+        padding: 10px;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .menu ul ul {
+        position: absolute;
+        width: 100%;
+        background: #910000;
+        display: none;
+    }
         table {
             width: 80%;
             margin: 0 auto;
@@ -14,54 +51,92 @@
             padding: 10px;
             border: 1px solid black;
         }
+        a:hover{
+            text-decoration: none;
+        }
+
+        body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      
+      .form input[type="number"] {
+        width: 200px;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+
     </style>
+    
 </head>
    
 <body>
-    <h1 style="text-align: center;">个人简历</h1>
-    <table>
-        <tr>
-            <th>姓名</th>
-            <td>柯立平</td>
-        </tr>
-        <tr>
-            <th>年龄</th>
-            <td>20岁</td>
-        </tr>
-        <tr>
-            <th>籍贯</th>
-            <td>浙江台州</td>
-        </tr>
-        <tr>
-            <th>学历</th>
-            <td>硕士</td>
-        </tr>
-        <tr>
-            <th>工作经验</th>
-            <td>1年</td>
-        </tr>
-        <tr>
-            <th>技能</th>
-            <td>Java, HTML, CSS, JavaScript, C++, C#, Visual Basic, MySQL, XAML</td>
-        </tr>
-        <tr>
-            <th>教育经历</th>
-            <td>安徽工业大学|软件工程</td>
-        </tr>
-        <tr>
-            <th>工作经历</th>
-            <td>公司A - 软件工程师</td>
-        </tr>
-        <tr>
-            <th>项目经验</th>
-            <td>项目A - Java Web开发</td>
-        </tr>
-        <tr>
-            <th>联系方式</th>
-            <td>邮箱: 15109153848@163.com<br>电话: 18255546372</td>
-        </tr>
-    </table>
-    <h2 style="text-align: center;">学习资源</h2>
-        <a href="test-site/resources/数据结构C语言版严蔚敏.pdf" download="数据结构电子书">数据结构电子书</a>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">一级菜单</a>
+                <ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">一级菜单</a>
+                <ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">一级菜单</a>
+                <ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">一级菜单</a>
+                <ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">一级菜单</a>
+                <ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h1 style="text-align: center;">下载资源</h1>
+    <a href="test-site/resources/数据结构C语言版严蔚敏.pdf" download="数据结构电子书">数据结构电子书</a>
+    <button>Click the button1</button>
+    <button>Click the button2</button>
+    <button>Click the button3</button>
+    <button>Click the button4</button>
+    <script src="main.js" defer></script>
 </body>
 </html>
